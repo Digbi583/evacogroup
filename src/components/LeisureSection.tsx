@@ -78,7 +78,7 @@ export const LeisureSection: React.FC<LeisureSectionProps> = ({
           <div className="bg-[#121A26] border border-white/5 hover:border-[#C8A97E]/40 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-xl group">
             <div className="relative h-56 overflow-hidden">
               <img
-                src="/assets/evaco/Pirate-Tavern.jpg"
+                src="/assets/evaco/112.jpg"
                 alt="Jaguar Aviation Restaurant"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

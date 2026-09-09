@@ -416,7 +416,7 @@ export const CLUSTERS: ClusterInfo[] = [
         name: 'Jaguar Aviation Restaurant',
         role: '5-Star Fine Dining with Supersonic Fighter Jet',
         description: 'An audacious culinary experience featuring an authentic SEPECAT Jaguar supersonic ground-attack fighter jet suspended dramatically between the rooftop terrace and cigar lounge, paired with gourmet dining for epicureans.',
-        image: '/assets/evaco/Pirate-Tavern.jpg',
+        image: '/assets/evaco/112.jpg',
         badges: ['Aviation Dining', 'Cigar Lounge', 'Michelin-Standard Cuisine']
       },
       {
