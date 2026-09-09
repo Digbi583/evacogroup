@@ -1,0 +1,6 @@
+{
+  "name": "Evaco Group - Luxury Property & Lifestyle Mauritius",
+  "description": "Forward-thinking luxury property developer, international hospitality, and premier services in Mauritius and worldwide, featuring an AI Wealth & Property Advisor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b111a;
+    color: #f1efea;
+    overflow-x: hidden;
+  }
+
+  /* Custom luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b111a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a3441;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c8a97e;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Glass & metallic accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f3e7d3 0%, #c8a97e 50%, #9e7d4a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(200, 169, 126, 0.25);
+}
+
+/* Luxury Interactive Button Styles & Hover Micro-Interactions */
+.luxury-btn-primary {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #d8bf95 0%, #c8a97e 50%, #b5915a 100%);
+  color: #0b111a;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px -2px rgba(200, 169, 126, 0.25);
+}
+
+.luxury-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -3px rgba(200, 169, 126, 0.45);
+}
+
+.luxury-btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(200, 169, 126, 0.3);
+}
+
+/* Shimmer beam effect for primary luxury buttons */
+.luxury-btn-primary::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  transition: all 0.75s ease-out;
+  pointer-events: none;
+}
+
+.luxury-btn-primary:hover::after {
+  left: 200%;
+}
+
+/* Luxury Secondary / Outline Button */
+.luxury-btn-secondary {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 26, 36, 0.85);
+  border: 1px solid rgba(200, 169, 126, 0.4);
+  color: #f1efea;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.luxury-btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: #c8a97e;
+  background: rgba(26, 37, 51, 0.95);
+  color: #ffffff;
+  box-shadow: 0 8px 24px -4px rgba(200, 169, 126, 0.25);
+}
+
+.luxury-btn-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Luxury AI Special Concierge Button */
+.luxury-btn-ai {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 27, 75, 0.45);
+  border: 1px solid rgba(129, 140, 248, 0.4);
+  color: #e0e7ff;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px -3px rgba(99, 102, 241, 0.2);
+}
+
+.luxury-btn-ai:hover {
+  transform: translateY(-2px);
+  background: rgba(49, 46, 129, 0.65);
+  border-color: rgba(200, 169, 126, 0.8);
+  color: #ffffff;
+  box-shadow: 0 8px 25px -2px rgba(200, 169, 126, 0.3), 0 4px 15px -2px rgba(99, 102, 241, 0.3);
+}
+
+.luxury-btn-ai:active {
+  transform: translateY(0);
+}
+
